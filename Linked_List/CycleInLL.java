@@ -1,5 +1,4 @@
 package DSA_Interview_Questions.Linked_List;
-
 public class CycleInLL 
 {
 	public static void main(String[] args) {
@@ -36,11 +35,15 @@ public class CycleInLL
 			if(slow == fast)
 			{
 				flag = true;
+				
 				break;
 			}
 		}
 		if(flag)
+		{
+			System.out.println(slow.next.val + " is causing the loop");
 			System.out.println("\nLoop present ");
+		}
 		else
 			System.out.println("\nLoop not present");
 	}
