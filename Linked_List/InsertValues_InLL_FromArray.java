@@ -1,7 +1,6 @@
 package DSA_Interview_Questions.Linked_List;
 
 import java.util.*;
-
 public class InsertValues_InLL_FromArray 
 {
 	static Node head = null;
