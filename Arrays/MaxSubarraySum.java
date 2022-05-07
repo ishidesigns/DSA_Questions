@@ -5,7 +5,7 @@ public class MaxSubarraySum {
 		int[] arr = new int[] {5, 3, -5, -4, -1, 5, 6, -1, -2, 7, -4, 4};
 		int n = arr.length;
 		
-		// Kadane Algorithm
+		// Kadane's Algorithm
 		long maxSum = 0, currSum = 0;
 		for (int i = 0; i < n; i++) {
 			currSum += arr[i];
