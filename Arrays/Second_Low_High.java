@@ -33,4 +33,3 @@ public class Second_Low_High {
         System.out.println("Second Lowest: " + secLow + "\nSecond Highest: " + secHigh);
     }
 }
-
