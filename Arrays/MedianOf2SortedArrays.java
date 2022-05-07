@@ -1,5 +1,5 @@
 package DSA_Interview_Questions.Arrays;
-
+import java.util.*;
 public class MedianOf2SortedArrays 
 {
 	public static void main(String[] args) {
