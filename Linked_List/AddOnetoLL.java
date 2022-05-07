@@ -1,5 +1,4 @@
 package DSA_Interview_Questions.Linked_List;
-
 public class AddOnetoLL 
 {
 	public static void main(String[] args) 
@@ -25,7 +24,6 @@ public class AddOnetoLL
 			System.out.print(head.val + " --> ");
 			head = head.next;
 		}
-		
 		System.out.println("null");
 	}
 	
@@ -99,7 +97,6 @@ public class AddOnetoLL
 			prev = temp;
 			temp = temp.next;
 		}
-		
 		if(carry != 0)
 		{
 			prev.next = new Node(carry);
