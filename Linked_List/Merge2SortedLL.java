@@ -1,5 +1,4 @@
 package DSA_Interview_Questions.Linked_List;
-
 public class Merge2SortedLL 
 {
 	public static void main(String[] args) 
