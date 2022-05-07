@@ -1,6 +1,5 @@
 package DSA_Interview_Questions.Linked_List;
 
-
 public class DeletionINSingleLL 
 {
 	public static void main(String[] args) {
