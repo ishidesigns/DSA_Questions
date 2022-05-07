@@ -16,8 +16,6 @@ public class Sort012
 	
 	static void sort012(int[] arr, int n)
     {
-		
-		// 
         int left = 0, right = n - 1, k = 0;
         
         while(k <= right)
