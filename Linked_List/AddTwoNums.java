@@ -12,11 +12,7 @@ public class AddTwoNums
 		head2.next = new Node(2);
 		head2.next.next = new Node(4);
 		head2.next.next.next = new Node(6);
-		
-//		printList(head1);
-//		printList(head2);
-//		System.out.println("-------------------------------");
-		
+				
 		Node res = addNums(head1, head2);
 		res = reverse(res);
 		printList(res);
