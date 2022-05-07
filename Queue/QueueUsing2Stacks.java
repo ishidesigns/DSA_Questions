@@ -1,6 +1,6 @@
 package DSA_Interview_Questions.Queue;
 
-import java.util.Queue;
+import java.util.*;
 
 class MyQueue
 {
