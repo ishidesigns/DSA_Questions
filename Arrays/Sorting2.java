@@ -11,7 +11,7 @@ public class Sorting2
 		quickSort(arr1, 0, size1 - 1);
 		System.out.println("After");
 		printArr(arr1, size1);
-		System.out.println("----------------");
+		System.out.println("---------------------");
         
 		
         int[] arr2 = new int[] {8, 1, 7, 4, 11, 15};
@@ -21,7 +21,7 @@ public class Sorting2
 		mergeSort(arr2, 0, size2 - 1);
 		System.out.println("After");
 		printArr(arr2, size2);
-		System.out.println("----------------");
+		System.out.println("---------------------");
 	}
 	
 	// Quick Sort
