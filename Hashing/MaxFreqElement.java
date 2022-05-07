@@ -1,7 +1,6 @@
 package DSA_Interview_Questions.Hashing;
 
 import java.util.*;
-
 public class MaxFreqElement 
 {
 	public static void main(String[] args) 
