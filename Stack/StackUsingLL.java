@@ -3,7 +3,7 @@ package DSA_Interview_Questions.Stack;
 public class StackUsingLL 
 {
 	static int size;
-	static Node top;
+	static Node topEle;
 	public static void main(String[] args) {
 		length();
 		top();
@@ -22,23 +22,9 @@ public class StackUsingLL
 	static void push(int x)
 	{
 		Node newNode = new Node(x);
-		if(top == null)
-		{
-			newNode.next = top;
-			top = newNode;
-		}
-		
-		else
-		{
-			Node temp = top;
-			while(temp.next != null)
-			{
-				temp = temp.next;
-			}
-			temp.next = newNode;
-		}
-		
-		size++;
+	    newNode.next = topEle;
+	    topEle = newNode;
+	    size++;
 	}
 	
 	static void length()
@@ -59,7 +45,7 @@ public class StackUsingLL
 			System.out.println("Stack is empty");
 		else
 		{
-			Node temp = top;
+			Node temp = topEle;
 			while(temp.next != null)
 			{
 				temp = temp.next;
@@ -70,18 +56,18 @@ public class StackUsingLL
 	
 	static void pop()
 	{
-		if(top == null)
+		if(topEle == null)
 		{
 			System.out.println("Stack underflow");
 			return;
 		}
 		if(size == 1)
 		{
-			top = top.next;
+			topEle = topEle.next;
 		}
 		else
 		{
-			Node temp = top;
+			Node temp = topEle;
 			Node prev = null;
 			while(temp.next != null)
 			{
