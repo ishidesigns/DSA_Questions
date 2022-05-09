@@ -6,16 +6,16 @@ public class StackUsingLL
 	static Node top;
 	public static void main(String[] args) {
 		length();
-		topEle();
+		top();
 		isEmpty();
 		push(5);
 		push(4);
 		pop();
-		topEle();
+		top();
 		length();
 		isEmpty();
 		pop();
-		topEle();
+		top();
 		length();
 	}
 	
@@ -53,7 +53,7 @@ public class StackUsingLL
 		else
 			System.out.println("No");
 	}
-	public static void topEle()
+	public static void top()
 	{
 		if(size == 0)
 			System.out.println("Stack is empty");
