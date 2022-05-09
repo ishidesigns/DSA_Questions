@@ -10,12 +10,13 @@ public class StackUsingLL
 		isEmpty();
 		push(5);
 		push(4);
-		pop();
-		top();
 		length();
 		isEmpty();
 		pop();
 		top();
+		pop();
+		top();
+		pop();
 		length();
 	}
 	
@@ -61,21 +62,10 @@ public class StackUsingLL
 			System.out.println("Stack underflow");
 			return;
 		}
-		if(size == 1)
-		{
-			topEle = topEle.next;
-		}
 		else
 		{
-			Node temp = topEle;
-			Node prev = null;
-			while(temp.next != null)
-			{
-				prev = temp;
-				temp = temp.next;
-			}
-			prev.next = null;
-		}
-		size--;
+			topEle = topEle.next;
+			size--;
+		}	
 	}
 }
