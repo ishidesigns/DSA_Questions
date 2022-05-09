@@ -13,8 +13,7 @@ public class StackUsingArray
 		isEmpty();
 		push(6);
 		size();
-		print();
-		pop();
+		printStack();
 		pop();
 		pop();
 		pop();
@@ -67,9 +66,10 @@ public class StackUsingArray
 		System.out.println(top + 1);
 	}
 	
-	static void print()
+	static void printStack()
 	{
-		for(int i = 0;i < top; i++)
+		System.out.print("Stack : ");
+		for(int i = 0; i <= top; i++)
 			System.out.print(arr[i] + " ");
 		
 		System.out.println();
