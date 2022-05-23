@@ -25,10 +25,8 @@ public class LevelOrderTraversal
 	
 	public static void printLevelOrder(Node root)
 	{
-		List<ArrayList<Integer>> anslist = new ArrayList<>();
 		if(root == null)
 			return;
-		
 		else
 		{
 			Queue<Node> q = new LinkedList<>();
