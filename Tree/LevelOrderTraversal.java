@@ -5,8 +5,8 @@ import java.util.*;
 public class LevelOrderTraversal
 {
 	public static void main(String[] args) {
-		Node root = null;
-		root = addNode(root, 5);
+	    Node root = null;
+	    root = addNode(root, 5);
 	    addNode(root, 3);
 	    addNode(root, 7);
 	    addNode(root, 2);
