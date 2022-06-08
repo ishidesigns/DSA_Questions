@@ -33,6 +33,8 @@ public class BinaryTreeTraversals
 	    preorder(root);
 	    System.out.print("\nPostorder: ");
 	    postorder(root);
+	    System.out.print("\nInorder using stack: ");
+	    inorderStack(root);
 	    System.out.print("\nPreorder using stack: ");
 	    preorderStack(root);
 	    System.out.print("\nPostorder using Stack: ");
@@ -99,6 +101,33 @@ public class BinaryTreeTraversals
             System.out.print(curr.val + " ");
         }
     }
+	
+	// inorder using dtack
+	static void inorderStack(Node root)
+	{
+		if(root == null)
+            return;
+		
+		Stack<Node> st = new Stack<>();
+        Node curr = root;
+        while(curr != null || !st.isEmpty())
+        {
+            if(curr != null)
+            {
+                st.push(curr);
+                curr = curr.left;
+            }
+            else
+            {
+            	if(!st.isEmpty())
+            	{
+            		curr = st.pop();
+            		System.out.print(curr.val + " ");
+            		curr = curr.right;
+            	}
+            }
+        }
+	}
     
 	// postorder using stack
     static void postorderStack(Node root)
