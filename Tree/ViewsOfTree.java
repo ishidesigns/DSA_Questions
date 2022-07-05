@@ -20,28 +20,15 @@ public class ViewsOfTree
 		/*
 				  5
 				/   \
-			   3     7
+			   3     1
 			  / \   / \
-			 2   4 6   8
-			      
+			 2   6 4   8      
 		*/
 		
 		
 		Node root = new Node(5);
-		Node rl = new Node(3);
-		Node rr = new Node(7);
-		root.left = rl;
-		root.right = rr;
-		
-		Node rll = new Node(2);
-		Node rlr = new Node(4);
-		rl.left = rll;
-		rl.right = rlr;
-		
-		Node rrl = new Node(6);
-		Node rrr = new Node(8);
-		rr.left = rrl;
-		rr.right = rrr;
+		CreateTree ct = new CreateTree();
+		ct.create(root);
 		
 		System.out.print("Top View: ");
 		topView(root);
