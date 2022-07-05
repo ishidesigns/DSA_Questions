@@ -1,0 +1,8 @@
+Recursion 
+-> When a function calls itself again and again until a specified condition (base condition) is met.
+-> function call stack is used in backend. (Stack overflow error comes when numerous function calls are waiting due to recursion)
+
+Recursion in Subsequence
+-> subsequence is a contiguous/ non-contiguous part of a sequence following the order of original sequence.
+-> no. of subsequences = 2^ n where n is length of sequence;
+-> example = "312" -> "", "3", "1", "2", "31", "32", "12", "312".
