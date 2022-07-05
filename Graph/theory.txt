@@ -1,0 +1,21 @@
+Graph 
+
+- It is a non linear data structure.
+- it consists of nodes/ vertices and edges.
+- Graphs represent networks, relations or connections.
+
+Types of Graphs
+- Directed and Undirected
+- Weighted and non-Weighted
+
+Directed Graph
+- Edges represent a specific path from one vertex to another
+
+Undirected Graph
+- Edges are not associated with directions.
+
+Weighted Graph
+- Edges have weights associated with it.
+
+non-Weighted Graph
+- Edges 
