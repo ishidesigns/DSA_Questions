@@ -15,7 +15,7 @@ Undirected Graph
 - Edges are not associated with directions.
 
 Weighted Graph
-- Edges have weights associated with it.
+- Edges have weights associated with them.
 
 non-Weighted Graph
-- Edges 
+- Edges don't have any weight associatedwith them.
