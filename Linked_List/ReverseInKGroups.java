@@ -19,8 +19,6 @@ public class ReverseInKGroups
 	{
 		int len = getLength(head);
 		int groups = len / k;
-		
-		
 	}
 	
 	public static int getLength(Node head)
