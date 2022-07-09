@@ -1,4 +1,4 @@
-package DSA_Interview_Questions.Arrays;
+package Arrays;
 
 public class SearchEle_SandR_Array 
 {
