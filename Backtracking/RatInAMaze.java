@@ -1,4 +1,4 @@
-package DSA_Interview_Questions.Backtracking;
+package Backtracking;
 
 import java.util.*;
 public class RatInAMaze 
