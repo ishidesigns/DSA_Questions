@@ -13,7 +13,6 @@ public class Sorting2
 		printArr(arr1, size1);
 		System.out.println("---------------------");
         
-		
         int[] arr2 = new int[] {8, 1, 7, 4, 11, 15};
 		int size2 = arr2.length;
 		System.out.println("Applying Merge Sort to arr2 \nBefore");
