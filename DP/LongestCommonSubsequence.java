@@ -1,4 +1,4 @@
-package DSA_Interview_Questions.DP;
+package DP;
 
 public class LongestCommonSubsequence 
 {
