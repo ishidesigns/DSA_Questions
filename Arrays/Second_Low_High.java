@@ -1,4 +1,4 @@
-package DSA_Interview_Questions.Arrays;
+package Arrays;
 
 public class Second_Low_High {
 	public static void main(String[] args) 
