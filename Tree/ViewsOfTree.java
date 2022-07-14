@@ -109,7 +109,6 @@ public class ViewsOfTree
 		rightView2(root.left, level + 1);
 	}
 	
-	
 	static void topView(Node root)
 	{
 		if(root == null)
