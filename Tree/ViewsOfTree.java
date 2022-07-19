@@ -56,16 +56,60 @@ public class ViewsOfTree
 			System.out.print(i + " ");
 		
 	}
-	static void leftView(Node root, int level)
+	
+	// Top View
+	static void topView(Node root)
 	{
 		if(root == null)
 			return;
 		
-		if(level == list2.size())
-			list2.add(root.val);
+		Map<Integer, Integer> map = new TreeMap<>();
+		Queue<Pair> q = new LinkedList<>();
+		q.add(new Pair(root, 0));
+		while(!q.isEmpty())
+		{
+			Pair p = q.poll();
+			Node curr = p.newNode;
+			int hd = p.h_dist;
+			
+			if(map.get(hd) == null)
+				map.put(hd, curr.val);
+			
+			if(curr.left != null)
+				q.add(new Pair(curr.left, hd - 1));
+			
+			if(curr.right != null)
+				q.add(new Pair(curr.right, hd + 1));
+		}
+		for(int i : map.values())
+			System.out.print(i + " ");
+	}
+	
+	// Bottom View
+	static void bottomView(Node root)
+	{
+		if(root == null)
+			return;
 		
-		leftView(root.left, level + 1);
-		leftView(root.right, level + 1);
+		Map<Integer, Integer> map = new TreeMap<>();
+		Queue<Pair> q = new LinkedList<>();
+		q.add(new Pair(root, 0));
+		while(!q.isEmpty())
+		{
+			Pair p = q.poll();
+			Node curr = p.newNode;
+			int hd = p.h_dist;
+			
+			map.put(hd, curr.val);
+			
+			if(curr.left != null)
+				q.add(new Pair(curr.left, hd - 1));
+			
+			if(curr.right != null)
+				q.add(new Pair(curr.right, hd + 1));
+		}
+		for(int i : map.values())
+			System.out.print(i + " ");
 	}
 	
 	// right View with TC : O(n) and SC : O(height of tree)
@@ -109,56 +153,16 @@ public class ViewsOfTree
 		rightView2(root.left, level + 1);
 	}
 	
-	static void topView(Node root)
+	// Left View
+	static void leftView(Node root, int level)
 	{
 		if(root == null)
 			return;
 		
-		Map<Integer, Integer> map = new TreeMap<>();
-		Queue<Pair> q = new LinkedList<>();
-		q.add(new Pair(root, 0));
-		while(!q.isEmpty())
-		{
-			Pair p = q.poll();
-			Node curr = p.newNode;
-			int hd = p.h_dist;
-			
-			if(map.get(hd) == null)
-				map.put(hd, curr.val);
-			
-			if(curr.left != null)
-				q.add(new Pair(curr.left, hd - 1));
-			
-			if(curr.right != null)
-				q.add(new Pair(curr.right, hd + 1));
-		}
-		for(int i : map.values())
-			System.out.print(i + " ");
-	}
-	
-	static void bottomView(Node root)
-	{
-		if(root == null)
-			return;
+		if(level == list2.size())
+			list2.add(root.val);
 		
-		Map<Integer, Integer> map = new TreeMap<>();
-		Queue<Pair> q = new LinkedList<>();
-		q.add(new Pair(root, 0));
-		while(!q.isEmpty())
-		{
-			Pair p = q.poll();
-			Node curr = p.newNode;
-			int hd = p.h_dist;
-			
-			map.put(hd, curr.val);
-			
-			if(curr.left != null)
-				q.add(new Pair(curr.left, hd - 1));
-			
-			if(curr.right != null)
-				q.add(new Pair(curr.right, hd + 1));
-		}
-		for(int i : map.values())
-			System.out.print(i + " ");
+		leftView(root.left, level + 1);
+		leftView(root.right, level + 1);
 	}
 }
