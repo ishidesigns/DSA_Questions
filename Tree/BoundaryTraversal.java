@@ -1,4 +1,4 @@
-package DSA_Interview_Questions.Tree;
+package Tree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,8 +64,10 @@ public class BoundaryTraversal
 				list.add(root.val);
 		}
 		
-		addLeftNodes(root.left, level + 1);
-		addLeftNodes(root.right, level + 1);
+		if(root.left != null)
+			addLeftNodes(root.left, level + 1);
+		else if(root.right != null)
+			addLeftNodes(root.right, level + 1);
 	}
 	
 	static void addLeafNodes(Node root) 
@@ -92,9 +94,10 @@ public class BoundaryTraversal
 		if(level == list2.size())
 			if(!isLeaf(root))
 				list2.add(root.val);
-		
-		addRightNodes(root.right, level + 1);
-		addRightNodes(root.left, level + 1);
+		if(root.right != null)
+			addRightNodes(root.right, level + 1);
+		else if(root.left != null)
+			addRightNodes(root.left, level + 1);
 	}
 	
 	static boolean isLeaf(Node cur)
