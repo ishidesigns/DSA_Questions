@@ -1,4 +1,4 @@
-package DSA_Interview_Questions.Graph;
+package Graph;
 
 import java.io.*;
 import java.util.*;
