@@ -35,7 +35,6 @@ public class AddTwoNums
 		head1 = reverse(head1);
 		head2 = reverse(head2);
 		
-		
 		Node t1 = head1;
         Node t2 = head2;
         Node l3 = new Node(0);

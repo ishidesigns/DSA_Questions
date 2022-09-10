@@ -1,4 +1,4 @@
-package DSA_Interview_Questions.Tree;
+package Tree;
 
 public class CreateTree 
 {
